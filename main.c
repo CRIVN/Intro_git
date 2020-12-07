@@ -1,8 +1,13 @@
 #include <stdio.h>
 
-int main(){
+int main() {
 
-printf("Hola mundo\n");
+    char nombre[100];
 
-    return 0;
+    printf("Hola mundo\n");
+    printf("Nombre: ");
+    fgets(nombre, sizeof(nombre), stdin);
+    printf("Hola %s", nombre);
+
+return 0;
 }
